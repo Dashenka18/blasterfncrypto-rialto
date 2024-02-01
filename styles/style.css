@@ -1,6 +1,58 @@
 
+:root {
+    --Dark-green: rgba(30, 40, 39, 1);
+    --milk: #e2dcde;
+    --Black: #141414;
+    --B-g-color: #fbfbfb;
+    --Main-color: #ffffff;
+    --mint: #899878;
+    --Price-color: rgba(20, 20, 20, .5);
+    --B-g-color-second: #efefef;
+    --footer-agreements-color: #c6cdd1;
+    --transition-dur: .5s cubic-bezier(.4, 0, .2, 1);
+    --hover-focus-color: rgba(251, 251, 251, .5);
+}
 
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--Black);
+    color: var(--milk);
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 a{
     text-decoration: none;
+}
+
+
+/* for phone */
+
+@media (max-width: 767px) {
+    
+    .tg{
+        margin: 0;
+        padding-left: 15px;
+        color: var(--milk);
+        font-size: 10px;
+    }
+
+
+    .nav{
+        max-width: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
